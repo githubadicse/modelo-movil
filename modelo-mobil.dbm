@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.1-beta" last-position="0,0" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database">
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<schema name="mobil" rect-visible="true" fill-color="#e1e1e1">
+	<role name="postgres"/>
+</schema>
+
+<table name="cliente">
+	<schema name="mobil"/>
+	<role name="postgres"/>
+	<position x="508" y="313"/>
+	<column name="idcliente" not-null="true">
+		<type name="bigint" length="0"/>
+	</column>
+	<column name="nombres">
+		<type name="varchar" length="0"/>
+	</column>
+	<constraint name="new_table_pk" type="pk-constr" table="mobil.cliente">
+		<columns names="idcliente" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+</dbmodel>
